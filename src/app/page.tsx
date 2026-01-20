@@ -17,42 +17,42 @@ import { Separator } from '@/components/ui/separator';
 export default function Home() {
   const news = [
     {
-      title: 'Annual Sports Day',
-      description: 'A day of fun, games, and healthy competition.',
+      title: 'წლიური სპორტული დღე',
+      description: 'გართობის, თამაშებისა და ჯანსაღი შეჯიბრის დღე.',
       image: PlaceHolderImages.find((img) => img.id === 'gallery-4'),
     },
     {
-      title: 'Science Olympiad Winners',
+      title: 'სამეცნიერო ოლიმპიადის გამარჯვებულები',
       description:
-        'Our students brought home medals from the National Science Olympiad.',
+        'ჩვენმა მოსწავლეებმა ეროვნული სამეცნიერო ოლიმპიადიდან მედლები ჩამოიტანეს.',
       image: PlaceHolderImages.find((img) => img.id === 'gallery-6'),
     },
     {
-      title: 'Art Exhibition "Colors of Spring"',
+      title: 'ხელოვნების გამოფენა "გაზაფხულის ფერები"',
       description:
-        'Showcasing the incredible talent of our budding artists.',
+        'წარმოგიდგენთ ჩვენი დამწყები ხელოვანების წარმოუდგენელ ნიჭს.',
       image: PlaceHolderImages.find((img) => img.id === 'gallery-5'),
     },
   ];
 
   const testimonials = [
     {
-      name: 'Nino',
-      role: 'Parent',
+      name: 'ნინო',
+      role: 'მშობელი',
       quote:
-        'The school has a wonderful environment. My child has grown so much, both academically and personally.',
+        'სკოლას საოცარი გარემო აქვს. ჩემი შვილი ძალიან გაიზარდა, როგორც აკადემიურად, ისე პიროვნულად.',
     },
     {
-      name: 'Giorgi',
-      role: 'Student, 11th Grade',
+      name: 'გიორგი',
+      role: 'მოსწავლე, XI კლასი',
       quote:
-        'The teachers are incredibly supportive and they make learning fun. I love the variety of clubs we can join.',
+        'მასწავლებლები წარმოუდგენლად მხარდამჭერები არიან და სწავლას ხალისიანს ხდიან. მომწონს, რომ მრავალფეროვან კლუბებში შეგვიძლია გაწევრიანება.',
     },
     {
-      name: 'Elene',
-      role: 'Parent',
+      name: 'ელენე',
+      role: 'მშობელი',
       quote:
-        "We are very impressed with the quality of education and the school's commitment to student well-being.",
+        'ძალიან კმაყოფილები ვართ განათლების ხარისხითა და სკოლის ერთგულებით მოსწავლეთა კეთილდღეობისადმი.',
     },
   ];
 
@@ -61,14 +61,15 @@ export default function Home() {
       {/* Header Section */}
       <header className="rounded-lg bg-card p-8 text-center shadow">
         <h1 className="font-headline text-4xl font-bold tracking-tight text-primary md:text-5xl">
-          Poti School Hub
+          ფოთის სკოლის ჰაბი
         </h1>
         <p className="mt-2 text-lg text-muted-foreground">
           სწავლის, ზრდისა და აღმოჩენების ადგილი
         </p>
         <p className="mx-auto mt-4 max-w-2xl text-lg">
-          Welcome to our school, where we are dedicated to providing a nurturing
-          and stimulating environment for students to excel.
+          კეთილი იყოს თქვენი მობრძანება ჩვენს სკოლაში, სადაც ჩვენ ვცდილობთ
+          შევქმნათ მზრუნველი და მასტიმულირებელი გარემო მოსწავლეების
+          წარმატებისთვის.
         </p>
       </header>
 
@@ -79,12 +80,12 @@ export default function Home() {
             <CardHeader className="flex-row items-center gap-4">
               <Clock className="h-8 w-8 text-primary" />
               <CardTitle className="font-headline text-2xl">
-                Class Timetable
+                გაკვეთილების ცხრილი
               </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                View the daily and weekly class schedules.
+                იხილეთ დღის და კვირის გაკვეთილების ცხრილი.
               </p>
             </CardContent>
           </Card>
@@ -94,12 +95,13 @@ export default function Home() {
             <CardHeader className="flex-row items-center gap-4">
               <Calendar className="h-8 w-8 text-primary" />
               <CardTitle className="font-headline text-2xl">
-                Academic Calendar
+                აკადემიური კალენდარი
               </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                Stay updated on important school dates and holidays.
+                იყავით განახლებული სკოლის მნიშვნელოვანი თარიღებისა და
+                არდადეგების შესახებ.
               </p>
             </CardContent>
           </Card>
@@ -108,7 +110,7 @@ export default function Home() {
           <CardHeader className="flex-row items-center gap-4">
             <Newspaper className="h-8 w-8 text-primary" />
             <CardTitle className="font-headline text-2xl">
-              Important Dates
+              მნიშვნელოვანი თარიღები
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -164,13 +166,13 @@ export default function Home() {
         <h2 className="font-headline text-3xl font-bold">სწრაფი ბმულები</h2>
         <div className="flex flex-wrap gap-4">
           <Button asChild size="lg">
-            <Link href="/contact">Contact Us</Link>
+            <Link href="/contact">დაგვიკავშირდით</Link>
           </Button>
           <Button variant="secondary" size="lg">
-            Electronic Journal
+            ელექტრონული ჟურნალი
           </Button>
           <Button variant="secondary" size="lg">
-            Announcements
+            განცხადებები
           </Button>
         </div>
       </section>
@@ -205,7 +207,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-      
+
       <Separator />
 
       {/* Footer */}
@@ -216,14 +218,23 @@ export default function Home() {
         </div>
         <div className="flex items-center justify-center gap-2">
           <Pin className="h-4 w-4" />
-          <span>9 April St, Poti, Georgia</span>
+          <span>9 აპრილის ქ., ფოთი, საქართველო</span>
         </div>
         <div className="flex justify-center gap-4">
-            <Link href="#" className="hover:text-primary">Facebook</Link>
-            <Link href="#" className="hover:text-primary">Instagram</Link>
-            <Link href="#" className="hover:text-primary">LinkedIn</Link>
+          <Link href="#" className="hover:text-primary">
+            Facebook
+          </Link>
+          <Link href="#" className="hover:text-primary">
+            Instagram
+          </Link>
+          <Link href="#" className="hover:text-primary">
+            LinkedIn
+          </Link>
         </div>
-        <p>&copy; {new Date().getFullYear()} Poti School Hub. All Rights Reserved.</p>
+        <p>
+          &copy; {new Date().getFullYear()} ფოთის სკოლის ჰაბი. ყველა უფლება
+          დაცულია.
+        </p>
       </footer>
     </div>
   );

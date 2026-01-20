@@ -9,7 +9,7 @@ export function Logo() {
       </div>
       <div className="overflow-hidden">
         <h2 className="font-headline text-lg font-bold leading-tight text-sidebar-foreground transition-opacity group-data-[collapsible=icon]:-translate-x-96 group-data-[collapsible=icon]:opacity-0">
-          Poti School
+          ფოთის სკოლა
         </h2>
       </div>
     </Link>

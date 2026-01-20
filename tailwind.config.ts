@@ -10,8 +10,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['"Noto Sans Georgian"', 'sans-serif'],
-        headline: ['"Playfair Display"', 'serif'],
+        body: ['"BPG Boxo Boxo"', 'sans-serif'],
+        headline: ['"BPG Boxo Boxo"', 'serif'],
         code: ['monospace'],
       },
       colors: {

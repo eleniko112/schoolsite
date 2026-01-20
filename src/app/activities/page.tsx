@@ -15,7 +15,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { Award, Beaker, Brush, Drama, Heart, Mic, Palette, Users } from 'lucide-react';
+import { Award, Beaker, Drama, Heart, Users } from 'lucide-react';
 
 export default function ActivitiesPage() {
   const teacherOfTheWeek = schoolData.teachers['5']; // Ekaterine
@@ -30,40 +30,40 @@ export default function ActivitiesPage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           <Card>
             <CardHeader>
-              <CardTitle>Upcoming Events</CardTitle>
-              <CardDescription>Don't miss out on what's next!</CardDescription>
+              <CardTitle>მომავალი ღონისძიებები</CardTitle>
+              <CardDescription>არ გამოტოვოთ, რა გველის!</CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="list-disc space-y-2 pl-5 text-muted-foreground">
-                <li>Annual School Fair - June 10th</li>
-                <li>Parent-Teacher Meetings - June 18th</li>
-                <li>Summer Camp Registrations Open - July 1st</li>
+                <li>სკოლის ყოველწლიური ბაზრობა - 10 ივნისი</li>
+                <li>მშობელთა კრებები - 18 ივნისი</li>
+                <li>საზაფხულო ბანაკის რეგისტრაცია იწყება - 1 ივლისი</li>
               </ul>
             </CardContent>
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>Excursions</CardTitle>
-              <CardDescription>Exploring beyond the classroom.</CardDescription>
+              <CardTitle>ექსკურსიები</CardTitle>
+              <CardDescription>აღმოაჩინე კლასის მიღმა.</CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="list-disc space-y-2 pl-5 text-muted-foreground">
-                <li>Visit to the National Museum</li>
-                <li>Botanical Garden Trip</li>
-                <li>Hiking day at Mtatsminda Park</li>
+                <li>ვიზიტი ეროვნულ მუზეუმში</li>
+                <li>გასვლა ბოტანიკურ ბაღში</li>
+                <li>ლაშქრობა მთაწმინდის პარკში</li>
               </ul>
             </CardContent>
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>Internal School Activities</CardTitle>
-              <CardDescription>Building our community.</CardDescription>
+              <CardTitle>სკოლის შიდა აქტივობები</CardTitle>
+              <CardDescription>ჩვენი საზოგადოების მშენებლობა.</CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="list-disc space-y-2 pl-5 text-muted-foreground">
-                <li>Spelling Bee Competition</li>
-                <li>Chess Tournament</li>
-                <li>Debate Club Finals</li>
+                <li>მართლწერის კონკურსი</li>
+                <li>ჭადრაკის ტურნირი</li>
+                <li>დებატების კლუბის ფინალი</li>
               </ul>
             </CardContent>
           </Card>
@@ -75,31 +75,33 @@ export default function ActivitiesPage() {
         <h2 className="font-headline text-3xl font-bold">აკადემიური სექცია</h2>
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
-            <AccordionTrigger>Subject Clubs</AccordionTrigger>
+            <AccordionTrigger>საგნობრივი კლუბები</AccordionTrigger>
             <AccordionContent>
               <div className="grid grid-cols-2 gap-4 pt-2 md:grid-cols-4">
                 <div className="flex items-center gap-2">
-                  <Beaker className="h-5 w-5 text-primary" /> Science Club
+                  <Beaker className="h-5 w-5 text-primary" /> მეცნიერების კლუბი
                 </div>
                 <div className="flex items-center gap-2">
-                  <Drama className="h-5 w-5 text-primary" /> Literature Club
+                  <Drama className="h-5 w-5 text-primary" /> ლიტერატურის კლუბი
                 </div>
                 <div className="flex items-center gap-2">
-                  <Users className="h-5 w-5 text-primary" /> History Buffs
+                  <Users className="h-5 w-5 text-primary" /> ისტორიის
+                  მოყვარულები
                 </div>
                 <div className="flex items-center gap-2">
-                  <Heart className="h-5 w-5 text-primary" /> Mathletes
+                  <Heart className="h-5 w-5 text-primary" /> მათემატიკოსები
                 </div>
               </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
-            <AccordionTrigger>STEM / Arts / Sports</AccordionTrigger>
+            <AccordionTrigger>STEM / ხელოვნება / სპორტი</AccordionTrigger>
             <AccordionContent>
-              Our school offers a balanced approach to education, encouraging
-              students to explore their interests in Science, Technology,
-              Engineering, and Math (STEM), as well as in the Arts and Sports.
-              We believe in nurturing well-rounded individuals.
+              ჩვენი სკოლა გთავაზობთ დაბალანსებულ მიდგომას განათლებისადმი, რომელიც
+              ხელს უწყობს მოსწავლეებს გამოიკვლიონ თავიანთი ინტერესები
+              მეცნიერებაში, ტექნოლოგიაში, ინჟინერიასა და მათემატიკაში (STEM),
+              ასევე ხელოვნებასა და სპორტში. ჩვენ გვჯერა, რომ ვზრდით მრავალმხრივ
+              პიროვნებებს.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -111,7 +113,7 @@ export default function ActivitiesPage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <Card>
             <CardHeader>
-              <CardTitle>Best Student Works</CardTitle>
+              <CardTitle>მოსწავლეთა საუკეთესო ნამუშევრები</CardTitle>
             </CardHeader>
             <CardContent className="flex justify-center">
               <Image
@@ -126,21 +128,21 @@ export default function ActivitiesPage() {
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>Student Articles</CardTitle>
+              <CardTitle>მოსწავლეთა სტატიები</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div>
-                <h3 className="font-semibold">My Journey in Robotics</h3>
+                <h3 className="font-semibold">ჩემი მოგზაურობა რობოტიკაში</h3>
                 <p className="text-sm text-muted-foreground">
-                  By Lile, 10th Grade - A look into the exciting world of our
-                  robotics club...
+                  ავტორი: ლილე, X კლასი - მიმოხილვა ჩვენი რობოტიკის კლუბის
+                  საინტერესო სამყაროში...
                 </p>
               </div>
               <div>
-                <h3 className="font-semibold">The Power of a Story</h3>
+                <h3 className="font-semibold">მოთხრობის ძალა</h3>
                 <p className="text-sm text-muted-foreground">
-                  By Sandro, 8th Grade - How creative writing helped me find my
-                  voice...
+                  ავტორი: სანდრო, VIII კლასი - როგორ დამეხმარა შემოქმედებითი
+                  წერა საკუთარი ხმის პოვნაში...
                 </p>
               </div>
             </CardContent>
@@ -155,7 +157,7 @@ export default function ActivitiesPage() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Award className="h-6 w-6 text-amber-500" />
-              Teacher of the Week
+              კვირის მასწავლებელი
             </CardTitle>
           </CardHeader>
           <CardContent className="flex items-center gap-6">
@@ -172,10 +174,10 @@ export default function ActivitiesPage() {
                 V კლასის დამრიგებელი
               </p>
               <p className="mt-2 italic">
-                "Ekaterine has shown exceptional dedication in preparing her
-                students for the regional math competition. Her innovative
-                teaching methods have made mathematics an exciting subject for
-                everyone."
+                "ეკატერინემ განსაკუთრებული თავდადება გამოიჩინა მოსწავლეების
+                რეგიონული მათემატიკის კონკურსისთვის მომზადებაში. მისი
+                ინოვაციური სწავლების მეთოდებმა მათემატიკა ყველასთვის საინტერესო
+                საგნად აქცია."
               </p>
             </div>
           </CardContent>
