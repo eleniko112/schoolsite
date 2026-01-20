@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "gallery-1",
+      "description": "Students in a classroom",
+      "imageUrl": "https://images.unsplash.com/photo-1758270705067-0d7edee57af0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzdHVkZW50cyUyMGNsYXNzcm9vbXxlbnwwfHx8fDE3Njg4MzQ5NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "students classroom"
+    },
+    {
+      "id": "gallery-2",
+      "description": "School hallway",
+      "imageUrl": "https://images.unsplash.com/photo-1527187162622-535b785f65f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzY2hvb2wlMjBoYWxsd2F5fGVufDB8fHx8MTc2ODg4ODg4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "school hallway"
+    },
+    {
+      "id": "gallery-3",
+      "description": "Library with books",
+      "imageUrl": "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBsaWJyYXJ5fGVufDB8fHx8MTc2ODgyMTQ3NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "school library"
+    },
+    {
+      "id": "gallery-4",
+      "description": "Students playing basketball",
+      "imageUrl": "https://images.unsplash.com/photo-1638569774366-e221b95e3512?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzdHVkZW50cyUyMGJhc2tldGJhbGx8ZW58MHx8fHwxNzY4ODg4ODg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "students basketball"
+    },
+    {
+      "id": "gallery-5",
+      "description": "Art class",
+      "imageUrl": "https://images.unsplash.com/photo-1508269151431-a34449ca161d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhcnQlMjBjbGFzc3xlbnwwfHx8fDE3Njg4ODU4NTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "art class"
+    },
+    {
+      "id": "gallery-6",
+      "description": "Science lab experiment",
+      "imageUrl": "https://images.unsplash.com/photo-1605781231474-f60dea478e8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzY2llbmNlJTIwbGFifGVufDB8fHx8MTc2ODg2NzcwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "science lab"
+    },
+    {
+      "id": "gallery-7",
+      "description": "School building exterior",
+      "imageUrl": "https://images.unsplash.com/photo-1592066575517-58df903152f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBidWlsZGluZ3xlbnwwfHx8fDE3Njg4MDUyMzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "school building"
+    },
+    {
+      "id": "gallery-8",
+      "description": "Graduation ceremony",
+      "imageUrl": "https://images.unsplash.com/photo-1496469888073-80de7e952517?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxncmFkdWF0aW9uJTIwY2VyZW1vbnl8ZW58MHx8fHwxNzY4NzkyNTA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "graduation ceremony"
+    }
+  ]
 }
