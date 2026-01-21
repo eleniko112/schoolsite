@@ -38,7 +38,7 @@ export default function CalendarPage() {
         </div>
         <div className="lg:col-span-1">
           <Card>
-            <CardHeader>
+            <CardHeader className="bg-primary/5">
               <CardTitle className="flex items-center gap-2 font-headline text-2xl">
                 <List className="h-6 w-6 text-primary" />
                 მნიშვნელოვანი თარიღები

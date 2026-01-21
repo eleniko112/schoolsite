@@ -47,7 +47,7 @@ export default function ClassPage({ params }: ClassPageProps) {
       </h2>
 
       <Card>
-        <CardHeader>
+        <CardHeader className="bg-primary/5">
           <CardTitle className="flex items-center gap-2 font-headline text-2xl">
             <User className="h-6 w-6 text-primary" />
             დამრიგებელი
@@ -65,7 +65,7 @@ export default function ClassPage({ params }: ClassPageProps) {
       </Card>
 
       <Card>
-        <CardHeader>
+        <CardHeader className="bg-primary/5">
           <CardTitle className="font-headline text-2xl">მოსწავლეები</CardTitle>
         </CardHeader>
         <CardContent>
@@ -100,7 +100,7 @@ export default function ClassPage({ params }: ClassPageProps) {
       </Card>
 
       <Card>
-        <CardHeader>
+        <CardHeader className="bg-primary/5">
           <CardTitle className="flex items-center gap-2 font-headline text-2xl">
             <CalendarDays className="h-6 w-6 text-primary" />
             გაკვეთილების განრიგი

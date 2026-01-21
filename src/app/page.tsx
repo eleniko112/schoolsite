@@ -76,7 +76,7 @@ export default function Home() {
       {/* Quick Information Section */}
       <section className="grid grid-cols-1 gap-6 md:grid-cols-3">
         <Link href="/schedule">
-          <Card className="h-full transition-shadow hover:shadow-lg">
+          <Card className="h-full bg-primary/5 transition-shadow hover:shadow-lg">
             <CardHeader className="flex-row items-center gap-4">
               <Clock className="h-8 w-8 text-primary" />
               <CardTitle className="font-headline text-2xl">
@@ -91,7 +91,7 @@ export default function Home() {
           </Card>
         </Link>
         <Link href="/calendar">
-          <Card className="h-full transition-shadow hover:shadow-lg">
+          <Card className="h-full bg-primary/5 transition-shadow hover:shadow-lg">
             <CardHeader className="flex-row items-center gap-4">
               <Calendar className="h-8 w-8 text-primary" />
               <CardTitle className="font-headline text-2xl">
@@ -106,7 +106,7 @@ export default function Home() {
             </CardContent>
           </Card>
         </Link>
-        <Card className="h-full transition-shadow hover:shadow-lg">
+        <Card className="h-full bg-primary/5 transition-shadow hover:shadow-lg">
           <CardHeader className="flex-row items-center gap-4">
             <Newspaper className="h-8 w-8 text-primary" />
             <CardTitle className="font-headline text-2xl">
@@ -168,10 +168,10 @@ export default function Home() {
           <Button asChild size="lg">
             <Link href="/contact">დაგვიკავშირდით</Link>
           </Button>
-          <Button variant="secondary" size="lg">
+          <Button variant="outline" size="lg">
             ელექტრონული ჟურნალი
           </Button>
-          <Button variant="secondary" size="lg">
+          <Button variant="outline" size="lg">
             განცხადებები
           </Button>
         </div>
@@ -184,7 +184,7 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {testimonials.map((testimonial) => (
-            <Card key={testimonial.name}>
+            <Card key={testimonial.name} className="bg-primary/5">
               <CardContent className="p-6">
                 <blockquote className="border-l-2 border-primary pl-4 text-lg italic">
                   {testimonial.quote}

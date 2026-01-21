@@ -28,7 +28,7 @@ export default function ActivitiesPage() {
       <section className="space-y-6">
         <h2 className="font-headline text-3xl font-bold">ღონისძიებები</h2>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <Card>
+          <Card className="bg-primary/5">
             <CardHeader>
               <CardTitle>მომავალი ღონისძიებები</CardTitle>
               <CardDescription>არ გამოტოვოთ, რა გველის!</CardDescription>
@@ -41,7 +41,7 @@ export default function ActivitiesPage() {
               </ul>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="bg-primary/5">
             <CardHeader>
               <CardTitle>ექსკურსიები</CardTitle>
               <CardDescription>აღმოაჩინე კლასის მიღმა.</CardDescription>
@@ -54,7 +54,7 @@ export default function ActivitiesPage() {
               </ul>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="bg-primary/5">
             <CardHeader>
               <CardTitle>სკოლის შიდა აქტივობები</CardTitle>
               <CardDescription>ჩვენი საზოგადოების მშენებლობა.</CardDescription>
@@ -111,7 +111,7 @@ export default function ActivitiesPage() {
       <section className="space-y-6">
         <h2 className="font-headline text-3xl font-bold">მოსწავლის კუთხე</h2>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <Card>
+          <Card className="bg-primary/5">
             <CardHeader>
               <CardTitle>მოსწავლეთა საუკეთესო ნამუშევრები</CardTitle>
             </CardHeader>
@@ -126,7 +126,7 @@ export default function ActivitiesPage() {
               />
             </CardContent>
           </Card>
-          <Card>
+          <Card className="bg-primary/5">
             <CardHeader>
               <CardTitle>მოსწავლეთა სტატიები</CardTitle>
             </CardHeader>

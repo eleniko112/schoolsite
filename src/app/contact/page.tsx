@@ -19,7 +19,7 @@ export default function ContactPage() {
         {/* Contact Information */}
         <div className="space-y-6">
           <Card>
-            <CardHeader>
+            <CardHeader className="bg-primary/5">
               <CardTitle>საკონტაქტო ინფორმაცია</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -39,7 +39,7 @@ export default function ContactPage() {
           </Card>
 
           <Card>
-            <CardHeader>
+            <CardHeader className="bg-primary/5">
               <CardTitle>სამუშაო საათები</CardTitle>
             </CardHeader>
             <CardContent>
@@ -56,7 +56,7 @@ export default function ContactPage() {
         {/* Contact Form */}
         <div className="space-y-6">
           <Card>
-            <CardHeader>
+            <CardHeader className="bg-primary/5">
               <CardTitle>დაგვიკავშირდით</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
