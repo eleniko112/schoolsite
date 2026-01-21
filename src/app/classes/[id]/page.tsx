@@ -15,7 +15,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
-import { Phone, User } from 'lucide-react';
+import { CalendarDays, Phone, User } from 'lucide-react';
 
 type ClassPageProps = {
   params: {
@@ -34,6 +34,7 @@ export default function ClassPage({ params }: ClassPageProps) {
   const classInfo = schoolData.classes.find((c) => c.id === classId);
   const teacher = (schoolData.teachers as any)[classId];
   const students = (schoolData.students as any)[classId];
+  const schedule = schoolData.schedule;
 
   if (!classInfo || !teacher || !students) {
     notFound();
@@ -93,6 +94,33 @@ export default function ClassPage({ params }: ClassPageProps) {
                   </TableRow>
                 )
               )}
+            </TableBody>
+          </Table>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2 font-headline text-2xl">
+            <CalendarDays className="h-6 w-6 text-primary" />
+            გაკვეთილების განრიგი
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead className="w-[150px]">დღე</TableHead>
+                <TableHead>გაკვეთილები</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {schedule.map((dayInfo) => (
+                <TableRow key={dayInfo.day}>
+                  <TableCell className="font-medium">{dayInfo.day}</TableCell>
+                  <TableCell>{dayInfo.subjects.join(' • ')}</TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </CardContent>
