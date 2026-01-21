@@ -19,7 +19,7 @@ export default function ClassesPage() {
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {classes.map((c) => (
           <Link href={`/classes/${c.id}`} key={c.id}>
-            <Card className="group flex h-full transform flex-col bg-primary/5 text-primary-foreground transition-all duration-300 hover:scale-105 hover:bg-primary/10 hover:shadow-lg hover:shadow-primary/20">
+            <Card className="group flex h-full transform flex-col bg-primary/10 text-primary-foreground transition-all duration-300 hover:scale-105 hover:bg-primary/20 hover:shadow-lg hover:shadow-primary/20">
               <CardHeader>
                 <CardTitle className="font-headline text-2xl text-card-foreground">
                   {c.name}
